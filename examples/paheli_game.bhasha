@@ -1,0 +1,24 @@
+# Shabd Paheli (Word Scramble Game) in BhashaPy
+
+shabd_list = ["bhasha", "kavita", "sitara", "parvat", "samudra"]
+asli_shabd = chuno(shabd_list)
+bikhra = uljhao(asli_shabd)
+
+dabba("SHABD PAHELI KHEL")
+likho("Is uljhe hue shabd ko suljhao:", bikhra)
+
+maoka = 3
+jeet = asatya
+
+dohrao maoka > 0:
+    jawab = batao("Apna jawab likho: ")
+    yadi jawab.strip().lower() == asli_shabd:
+        dabba("Shabaash! Sahi jawab!")
+        jeet = satya
+        thamo
+    nahi_toh:
+        maoka = maoka - 1
+        likho("Galat! Bache hue mauke:", maoka)
+
+yadi mat jeet:
+    likho("Koi baat nahi! Sahi shabd tha:", asli_shabd)

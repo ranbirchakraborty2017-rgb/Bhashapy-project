@@ -1,0 +1,16 @@
+vidhi swagat(naam):
+    yadi naam == "Dost":
+        dabba("Phir se swagat hai, Dost!")
+    nahi_toh:
+        likho("Namaste,", naam)
+
+likho("Aaj ka din:", dinank())
+naam_user = batao("Aapka shubh naam kya hai? ")
+swagat(naam_user)
+
+sheershak = ["Chai", "Samosa", "Jalebi", "Lassi"]
+likho("Aaj ka special:", chuno(sheershak))
+likho("Ulta naam:", palti(naam_user))
+
+pratyek sankhya andar kram(1, 4):
+    likho("Kram sankhya:", sankhya)
